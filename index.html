@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Конвертер валют на JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">Конвертер валют</p>
+      <div class="content">
+        <div class="content-block-one">
+          <div class="block-one__currency" data-currency="USD">
+            <div>Курс USD <span class="date"></span></div>
+            <p class="kurs"></p>
+          </div>
+          <div class="block-one__currency" data-currency="EUR">
+            <div>Курс EUR <span class="date"></span></div>
+            <p class="kurs"></p>
+          </div>
+          <div class="block-one__currency" data-currency="PLN">
+            <div>Курс PLN <span class="date"></span></div>
+            <p class="kurs"></p>
+          </div>
+        </div>
+        <div class="content-block-two">
+          <div class="block-two__currency">
+            <select id="from-currency">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="PLN">PLN</option>
+              <option value="UAH">UAH</option>
+            </select>
+            <input id="from-amount" placeholder="Введіть суму" />
+          </div>
+          <div class="block-two__currency">
+            <select id="to-currency">
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="PLN">PLN</option>
+            </select>
+            <input id="to-amount" placeholder="Введіть суму" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
